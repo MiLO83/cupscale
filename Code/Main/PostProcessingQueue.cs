@@ -157,7 +157,7 @@ namespace Cupscale.Cupscale
             {
                 try
                 {
-                    string newPath = file.Substring(0, file.Length - 8) + ".tmp";
+                    string newPath = file.Substring(0, file.Length - 8) + ".png.tmp";
                     string movePath = Path.Combine(Paths.imgOutPath, Path.GetFileName(newPath));
                     Logger.Log("[Queue] Renaming & moving " + file + " => " + movePath);
                     File.Move(file, movePath);
